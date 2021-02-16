@@ -1,0 +1,10 @@
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\scheme.csprojAssemblyReference.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\scheme.csproj.GenerateResource.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\scheme.csproj.CoreCompileInputs.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\mdk\scheme\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

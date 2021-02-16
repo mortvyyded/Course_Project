@@ -20,7 +20,7 @@ namespace Project_Maltsev_Dmitry_group_881
         Form3 f3;
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void разработчикToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,10 +30,19 @@ namespace Project_Maltsev_Dmitry_group_881
 
         private void проектыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            f2 = new Form2();
-            f2.Show();
+
+        }
+
+        private void инженерныйКалькуляторToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             f3 = new Form3();
             f3.Show();
+        }
+
+        private void калькуляторToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            f2 = new Form2();
+            f2.Show();
         }
     }
 }

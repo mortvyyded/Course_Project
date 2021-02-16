@@ -69,12 +69,14 @@
             this.калькуляторToolStripMenuItem1.Name = "калькуляторToolStripMenuItem1";
             this.калькуляторToolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
             this.калькуляторToolStripMenuItem1.Text = "Калькулятор";
+            this.калькуляторToolStripMenuItem1.Click += new System.EventHandler(this.калькуляторToolStripMenuItem1_Click);
             // 
             // инженерныйКалькуляторToolStripMenuItem
             // 
             this.инженерныйКалькуляторToolStripMenuItem.Name = "инженерныйКалькуляторToolStripMenuItem";
             this.инженерныйКалькуляторToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.инженерныйКалькуляторToolStripMenuItem.Text = "Инженерный калькулятор";
+            this.инженерныйКалькуляторToolStripMenuItem.Click += new System.EventHandler(this.инженерныйКалькуляторToolStripMenuItem_Click);
             // 
             // Form1
             // 

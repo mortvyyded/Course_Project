@@ -141,7 +141,7 @@ namespace Project_Maltsev_Dmitry_group_881
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 3;
-            label1.Text = a.ToString() + "*";
+            label1.Text = a.ToString() + "x";
             znak = true;
         }
 
@@ -150,7 +150,7 @@ namespace Project_Maltsev_Dmitry_group_881
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 4;
-            label1.Text = a.ToString() + "/";
+            label1.Text = a.ToString() + "÷";
             znak = true;
         }
 
@@ -167,6 +167,16 @@ namespace Project_Maltsev_Dmitry_group_881
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

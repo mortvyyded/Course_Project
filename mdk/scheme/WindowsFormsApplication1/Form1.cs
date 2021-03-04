@@ -39,8 +39,12 @@ namespace WindowsFormsApplication1
             textBox8.Text = Convert.ToString(all);
             all = !all;
             textBox9.Text = Convert.ToString(all);
-            if (all == true) { textBox4.Text = "5v"; }
-            else { textBox4.Text = "0v"; }
+            if (all == true) { textBox4.Text = "5v";
+                textBox4.BackColor = Color.Yellow;
+            }
+            else { textBox4.Text = "0v";
+                textBox4.BackColor = Color.Gray;
+            }
         }
     }
 }

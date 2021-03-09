@@ -1,0 +1,7 @@
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\bin\Debug\exercises-Maltsev-Dmitry-group-881.exe.config
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\bin\Debug\exercises-Maltsev-Dmitry-group-881.exe
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\bin\Debug\exercises-Maltsev-Dmitry-group-881.pdb
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\obj\Debug\exercises-Maltsev-Dmitry-group-881.csprojAssemblyReference.cache
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\obj\Debug\exercises-Maltsev-Dmitry-group-881.csproj.CoreCompileInputs.cache
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\obj\Debug\exercises-Maltsev-Dmitry-group-881.exe
+C:\Users\mortvyyded\source\repos\exercises-Maltsev-Dmitry-group-881\exercises-Maltsev-Dmitry-group-881\obj\Debug\exercises-Maltsev-Dmitry-group-881.pdb

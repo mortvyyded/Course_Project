@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Operations
+namespace Project_Maltsev_Dmitry_group_881
 {
     internal class SumOp
     {

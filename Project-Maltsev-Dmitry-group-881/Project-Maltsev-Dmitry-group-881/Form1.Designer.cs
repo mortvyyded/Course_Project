@@ -43,14 +43,14 @@
             this.проектыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1298, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1234, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // разработчикToolStripMenuItem
             // 
             this.разработчикToolStripMenuItem.Name = "разработчикToolStripMenuItem";
-            this.разработчикToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.разработчикToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.разработчикToolStripMenuItem.Text = "Разработчик";
             this.разработчикToolStripMenuItem.Click += new System.EventHandler(this.разработчикToolStripMenuItem_Click);
             // 
@@ -60,21 +60,21 @@
             this.калькуляторToolStripMenuItem1,
             this.инженерныйКалькуляторToolStripMenuItem});
             this.проектыToolStripMenuItem.Name = "проектыToolStripMenuItem";
-            this.проектыToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.проектыToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.проектыToolStripMenuItem.Text = "Проекты";
             this.проектыToolStripMenuItem.Click += new System.EventHandler(this.проектыToolStripMenuItem_Click);
             // 
             // калькуляторToolStripMenuItem1
             // 
             this.калькуляторToolStripMenuItem1.Name = "калькуляторToolStripMenuItem1";
-            this.калькуляторToolStripMenuItem1.Size = new System.Drawing.Size(220, 22);
+            this.калькуляторToolStripMenuItem1.Size = new System.Drawing.Size(228, 22);
             this.калькуляторToolStripMenuItem1.Text = "Калькулятор";
             this.калькуляторToolStripMenuItem1.Click += new System.EventHandler(this.калькуляторToolStripMenuItem1_Click);
             // 
             // инженерныйКалькуляторToolStripMenuItem
             // 
             this.инженерныйКалькуляторToolStripMenuItem.Name = "инженерныйКалькуляторToolStripMenuItem";
-            this.инженерныйКалькуляторToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.инженерныйКалькуляторToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.инженерныйКалькуляторToolStripMenuItem.Text = "Инженерный калькулятор";
             this.инженерныйКалькуляторToolStripMenuItem.Click += new System.EventHandler(this.инженерныйКалькуляторToolStripMenuItem_Click);
             // 
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 139);
+            this.ClientSize = new System.Drawing.Size(1234, 150);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";

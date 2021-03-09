@@ -22,3 +22,4 @@ C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub
 C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\Project-Maltsev-Dmitry-group-881\Project-Maltsev-Dmitry-group-881\obj\Debug\Project-Maltsev-Dmitry-group-881.csproj.CoreCompileInputs.cache
 C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\Project-Maltsev-Dmitry-group-881\Project-Maltsev-Dmitry-group-881\obj\Debug\Project-Maltsev-Dmitry-group-881.exe
 C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\Project-Maltsev-Dmitry-group-881\Project-Maltsev-Dmitry-group-881\obj\Debug\Project-Maltsev-Dmitry-group-881.pdb
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\Project-Maltsev-Dmitry-group-881\Project-Maltsev-Dmitry-group-881\obj\Debug\Project_Maltsev_Dmitry_group_881.Form4.resources

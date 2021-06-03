@@ -11,144 +11,403 @@ using SharpGL;
 
 namespace SharpGL_My_First_Model
 {
+    
     public partial class Form1 : Form
     {
-        float rotation = 0.0f; // переменная, которая будет задавать угол поворота
+        float rotation = 0.0f;
+
+        
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void openglControl1_Load(object sender, EventArgs e)
+        private void openglControl1_OpenGLDraw(object sender, SharpGL.RenderEventArgs args)
         {
-            //  Возьмём OpenGL объект
             OpenGL gl = openglControl1.OpenGL;
-
-            //  Очищаем буфер цвета и глубины
             gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
-
-            //  Загружаем единичную матрицу
             gl.LoadIdentity();
-
-            //  Указываем оси вращения (x, y, z)
             gl.Rotate(rotation, 0.0f, 1.0f, 0.0f);
 
-            // рисуем крышу
+            //ДНО 1
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.1, 0.1, 0.1);
+            gl.Vertex(-2, 0 , -1.5);
+            gl.Vertex(2, 0, -1.5);
+            gl.Vertex(2, 0, 2.5);
+            gl.Vertex(-2, 0, 2.5);
+            gl.End();
+
+            //ДНО 2
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.1, 0.1, 0.1);
+            gl.Vertex(-1.5, 0, -4);
+            gl.Vertex(1.5, 0, -4);
+            gl.Vertex(1.5, 0, -1);
+            gl.Vertex(-1.5, 0, -1);
+            gl.End();
+
+            //ДНО 3
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.1, 0.1, 0.1);
+            gl.Vertex(-2, 0, -4);
+            gl.Vertex(2, 0, -4);
+            gl.Vertex(2, 0, -3);
+            gl.Vertex(-2, 0, -3);
+            gl.End();
+
+            //ДНО 4
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.1, 0.1, 0.1);
+            gl.Vertex(-1.5, 0, 4);
+            gl.Vertex(1.5, 0, 4);
+            gl.Vertex(1.5, 0, 1);
+            gl.Vertex(-1.5, 0, 1);
+            gl.End();
+
+            //ДНО 5
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.1, 0.1, 0.1);
+            gl.Vertex(-1, 0, 6);
+            gl.Vertex(1, 0, 6);
+            gl.Vertex(1, 0, 5);
+            gl.Vertex(-1, 0, 5);
+            gl.End();
+
+            //БАМПЕР ПЕРЕД 1
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 0, 6);
+            gl.Vertex(1, 0, 6);
+            gl.Vertex(1, 1, 6);
+            gl.Vertex(-1, 1, 6);
+            gl.End();
+            
+            //БАМПЕР ЗАД 1
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0, -4);
+            gl.Vertex(2, 0, -4);
+            gl.Vertex(2, 1, -4);
+            gl.Vertex(-2, 1, -4);
+            gl.End();
+
+
+            //БАГАЖНИК 1 
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 1, -4);
+            gl.Vertex(2, 1, -4);
+            gl.Vertex(2, 1.3, -2.5);
+            gl.Vertex(-2, 1.3, -2.5);
+            gl.End();
+
+            //КАПОТ 1
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 1, 6);
+            gl.Vertex(1, 1, 6);
+            gl.Vertex(2, 1.3, 2.5);
+            gl.Vertex(-2, 1.3, 2.5);
+            gl.End();
+
+            //СТЕКО ПЕРЕД
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 1.3,2.5);
+            gl.Vertex(2, 1.3, 2.5);
+            gl.Vertex(2, 2.7, 2);
+            gl.Vertex(-2, 2.7, 2);
+            gl.End();
+
+            //СТЕКО ЗАД
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 1.3, -2.5);
+            gl.Vertex(2, 1.3, -2.5);
+            gl.Vertex(2, 2.7, -2);
+            gl.Vertex(-2, 2.7, -2);
+            gl.End();
+
+            //крыша
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 2.7, -2);
+            gl.Vertex(2, 2.7, -2);
+            gl.Vertex(2, 2.7, 2);
+            gl.Vertex(-2, 2.7, 2);
+            gl.End();
+
+            //фары перед
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(3.1, 0.8, 0.1);
+            gl.Vertex(1.8, 0.2, 5.01);
+            gl.Vertex(1.6, 0.2, 5.01);
+            gl.Vertex(1.6, 0.8, 5.01);
+            gl.Vertex(1.8, 0.8, 5.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(3.1, 0.8, 0.1);
+            gl.Vertex(-1.8, 0.2, 5.01);
+            gl.Vertex(-1.6, 0.2, 5.01);
+            gl.Vertex(-1.6, 0.8, 5.01);
+            gl.Vertex(-1.8, 0.8, 5.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 1, 1.5);
+            gl.Vertex(1.6, 0.2, 5.01);
+            gl.Vertex(1, 0.2, 5.01);
+            gl.Vertex(1, 0.8, 5.01);
+            gl.Vertex(1.6, 0.8, 5.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 1, 1.5);
+            gl.Vertex(-1.6, 0.2, 5.01);
+            gl.Vertex(-1, 0.2, 5.01);
+            gl.Vertex(-1, 0.8, 5.01);
+            gl.Vertex(-1.6, 0.8, 5.01);
+            gl.End();
+
+            //Радиатор
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.2, 0.2, 0.2);
+            gl.Vertex(-0.5, 0.1, 6.01);
+            gl.Vertex(0.5, 0.1, 6.01);
+            gl.Vertex(0.5, 0.9, 6.01);
+            gl.Vertex(-0.5, 0.9, 6.01);
+            gl.End();
+
+            //фары зад
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(3.1, 0.8, 0.1);
+            gl.Vertex(1.8, 0.2, -4.01);
+            gl.Vertex(1.6, 0.2, -4.01);
+            gl.Vertex(1.6, 0.8, -4.01);
+            gl.Vertex(1.8, 0.8, -4.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(3.1, 0.8, 0.1);
+            gl.Vertex(-1.8, 0.2, -4.01);
+            gl.Vertex(-1.6, 0.2, -4.01);
+            gl.Vertex(-1.6, 0.8, -4.01);
+            gl.Vertex(-1.8, 0.8, -4.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.6, 0.1, 0.1);
+            gl.Vertex(1.6, 0.2, -4.01);
+            gl.Vertex(1, 0.2, -4.01);
+            gl.Vertex(1, 0.8, -4.01);
+            gl.Vertex(1.6, 0.8, -4.01);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.6, 0.1, 0.1);
+            gl.Vertex(-1.6, 0.2, -4.01);
+            gl.Vertex(-1, 0.2, -4.01);
+            gl.Vertex(-1, 0.8, -4.01);
+            gl.Vertex(-1.6, 0.8, -4.01);
+            gl.End();
+
+            //Колесо перед
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 0, 4);
+            gl.Vertex(1, 0, 4);
+            gl.Vertex(1, 0.7, 3.8);
+            gl.Vertex(-1, 0.7, 3.8);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 0, 2.5);
+            gl.Vertex(1, 0, 2.5);
+            gl.Vertex(1, 0.7, 2.9);
+            gl.Vertex(-1, 0.7, 2.9);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 0.7, 3.8);
+            gl.Vertex(1, 0.7, 3.8);
+            gl.Vertex(1, 0.7, 2.9);
+            gl.Vertex(-1, 0.7, 2.9);
+            gl.End();
+
+            //Колесо зад
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0, -3);
+            gl.Vertex(2, 0, -3);
+            gl.Vertex(2, 0.7, -2.7);
+            gl.Vertex(-2, 0.7, -2.7);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0, -1.5);
+            gl.Vertex(2, 0, -1.5);
+            gl.Vertex(2, 0.7, -1.9);
+            gl.Vertex(-2, 0.7, -1.9);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0.7, -2.7);
+            gl.Vertex(2, 0.7, -2.7);
+            gl.Vertex(2, 0.7, -1.9);
+            gl.Vertex(-2, 0.7, -1.9);
+            gl.End();
+
+           
+            //двери 1
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0, -1.5);
+            gl.Vertex(-2, 0, 2.5);
+            gl.Vertex(-1, 1.2, 3.3);
+            gl.Vertex(-1, 1.3, 2.5);
+            gl.Vertex(-2, 2.7, 2);
+            gl.Vertex(-2, 2.7, -2);
+            gl.Vertex(-2, 1.3, -2.5);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0, -4);
+            gl.Vertex(-2, 1, -4);
+            gl.Vertex(-2, 1.3, -2.4);
+            gl.Vertex(-2, 0, -3);            
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-1, 0, 6);
+            gl.Vertex(-1, 1, 6);
+            gl.Vertex(-1, 1.2, 3.2);
+            gl.Vertex(-1, 0, 4);
+            gl.End();           
+
             gl.Begin(OpenGL.GL_TRIANGLES);
-
-            gl.Color(1f, 0.2f, 0.0f); // здесь задаём цвет для каждой плоскости
-            gl.Vertex(0.0f, 2.5f, 0.0f);
-            gl.Vertex(2.0f, 1.5f, -2.0f);
-            gl.Vertex(2.0f, 1.5f, 2.0f);
-
-            gl.Color(1f, 0.3f, 0.0f);
-            gl.Vertex(-2.0f, 1.5f, -2.0f);
-            gl.Vertex(-2.0f, 1.5f, 2.0f);
-            gl.Vertex(0.0f, 2.5f, 0.0f);
-
-            gl.Color(1f, 0.4f, 0.0f);
-            gl.Vertex(0.0f, 2.5f, 0.0f);
-            gl.Vertex(2.0f, 1.5f, -2.0f);
-            gl.Vertex(-2.0f, 1.5f, -2.0f);
-
-            gl.Color(1f, 0.1f, 0.0f);
-            gl.Vertex(0.0f, 2.5f, 0.0f);
-            gl.Vertex(-2.0f, 1.5f, 2.0f);
-            gl.Vertex(2.0f, 1.5f, 2.0f);
-
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(-2, 0.7, -2);
+            gl.Vertex(-2, 0.7, -2.8);
+            gl.Vertex(-2, 1.3, -2.5);
             gl.End();
 
-            // передняя часть дома
+            //двери 2
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(1f, 1f, 0f);
-            gl.Vertex(2f, 1.5f, -2f);
-            gl.Vertex(2f, 0f, -2f);
-            gl.Vertex(-2f, 0f, -2f);
-            gl.Vertex(-2f, 1.5f, -2f);
-
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(2, 0, -1.5);
+            gl.Vertex(2, 0, 2.5);
+            gl.Vertex(1, 1.2, 3.3);
+            gl.Vertex(1, 1.3, 2.5);
+            gl.Vertex(2, 2.7, 2);
+            gl.Vertex(2, 2.7, -2);
+            gl.Vertex(2, 1.3, -2.5);
             gl.End();
 
-            // правая часть дома
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(1f, 0.8f, 0f);
-            gl.Vertex(2f, 0f, -2f);
-            gl.Vertex(2f, 0f, 2f);
-            gl.Vertex(2f, 1.5f, 2f);
-            gl.Vertex(2f, 1.5f, -2f);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(2, 0, -4);
+            gl.Vertex(2, 1, -4);
+            gl.Vertex(2, 1.3, -2.4);
+            gl.Vertex(2, 0, -3);
             gl.End();
 
-            // задняя часть дома
+            gl.Begin(OpenGL.GL_TRIANGLES);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(2, 0.7, -2);
+            gl.Vertex(2, 0.7, -2.8);
+            gl.Vertex(2, 1.3, -2.5);
+            gl.End();
+
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(1f, 0.7f, 0f);
-            gl.Vertex(2f, 0f, 2f);
-            gl.Vertex(-2f, 0f, 2f);
-            gl.Vertex(-2f, 1.5f, 2f);
-            gl.Vertex(2f, 1.5f, 2f);
+            gl.Color(0.5, 0.5, 0.5);
+            gl.Vertex(1, 0, 6);
+            gl.Vertex(1, 1, 6);
+            gl.Vertex(1, 1.2, 3.2);
+            gl.Vertex(1, 0, 4);
             gl.End();
 
-            // левая часть дома
+            //Стекло перед
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(1f, 0.9f, 0f);
-            gl.Vertex(-2f, 0f, -2f);
-            gl.Vertex(-2f, 0f, 2f);
-            gl.Vertex(-2f, 1.5f, 2f);
-            gl.Vertex(-2f, 1.5f, -2f);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(-1.9, 1.4, 2.5);
+            gl.Vertex(1.9, 1.4, 2.5);
+            gl.Vertex(1.9, 2.6, 2.1);
+            gl.Vertex(-1.9, 2.6, 2.1);
             gl.End();
 
-            // дверь (передняя стена)
+            //СТЕКО ЗАД
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(1f, 0.5f, 0f);
-            gl.Vertex(0.3f, 0f, -2.01f);
-            gl.Vertex(-0.3f, 0f, -2.01f);
-            gl.Vertex(-0.3f, 1.2f, -2.01f);
-            gl.Vertex(0.3f, 1.2f, -2.01f);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(-1.9, 1.4, -2.5);
+            gl.Vertex(1.9, 1.4, -2.5);
+            gl.Vertex(1.9, 2.6, -2.1);
+            gl.Vertex(-1.9, 2.6, -2.1);
             gl.End();
 
-            // рисуем землю            
+            //Стекло дверь
             gl.Begin(OpenGL.GL_POLYGON);
-            gl.Color(0f, 1f, 0f);
-            gl.Vertex(-10f, 0f, -10f);
-            gl.Vertex(10f, 0f, -10f);
-            gl.Vertex(10f, 0f, 10f);
-            gl.Vertex(-10f, 0f, 10f);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(2.01, 1.3, 0.3);
+            gl.Vertex(2.01, 2.5, 0.3);
+            gl.Vertex(2.01, 2.5, 2);
+            gl.Vertex(2.01, 1.3, 2.4);
             gl.End();
 
-            rotation += 1.5f; // угол разворота за 1 кадр
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(-2.01, 1.3, 0.3);
+            gl.Vertex(-2.01, 2.5, 0.3);
+            gl.Vertex(-2.01, 2.5, 2);
+            gl.Vertex(-2.01, 1.3, 2.4);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(2.01, 1.3, -0.3);
+            gl.Vertex(2.01, 2.5, -0.3);
+            gl.Vertex(2.01, 2.5, -2);
+            gl.Vertex(2.01, 1.3, -2.4);
+            gl.End();
+
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Color(0.9, 0.9, 0.9);
+            gl.Vertex(-2.01, 1.3, -0.3);
+            gl.Vertex(-2.01, 2.5, -0.3);
+            gl.Vertex(-2.01, 2.5, -2);
+            gl.Vertex(-2.01, 1.3, -2.4);
+
+           
+
+            gl.End();
+
+            rotation += 1.5f; 
         }
 
-        // Эту функцию используем для задания некоторых значений по умолчанию
-        private void openGLControl_OpenGLInitialized(object sender, EventArgs e)
+        private void openglControl1_OpenGLInitialized(object sender, EventArgs e)
         {
-            //  Возьмём OpenGL объект
             OpenGL gl = openglControl1.OpenGL;
-
-            //  Фоновый цвет по умолчанию (в данном случае цвет голубой)
-            gl.ClearColor(0.1f, 0.5f, 1.0f, 0);
+            gl.ClearColor(0.9f, 0.9f, 1.9f, 0);
         }
 
-        // Данная функция используется для преобразования изображения 
-        // в объёмный вид с перспективой
-        private void openGLControl_Resized(object sender, EventArgs e)
+        private void openglControl1_Resized(object sender, EventArgs e)
         {
-            //  Возьмём OpenGL объект
+           
             OpenGL gl = openglControl1.OpenGL;
-
-            //  Зададим матрицу проекции
             gl.MatrixMode(OpenGL.GL_PROJECTION);
-
-            //  Единичная матрица для последующих преобразований
             gl.LoadIdentity();
-
-            //  Преобразование
             gl.Perspective(60.0f, (double)Width / (double)Height, 0.01, 100.0);
-
-            //  Данная функция позволяет установить камеру и её положение
-            gl.LookAt(-5, 3, -6,    // Позиция самой камеры (x, y, z)
-                        0, 1, 0,     // Направление, куда мы смотрим
-                        0, 2, 0);    // Верх камеры
-
-            //  Зададим модель отображения
+            gl.LookAt(-5,6, -8,    
+                        0, 1, 0,     
+                        0, 2, 0);    
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9rNJy9Wzbdbc0Fl0wKpuwQo5+j3kqhL+tB1Q4hXm0q6vQQl1pH1LQZAwQekQvGKF77G4zjYU01ABGPGkg75CJQ==",
+  "dgSpecHash": "QztorNSakOYO2h7/e3rNnxTew/BCYOzwtbsb6c+Ke/lw6nUNRP3hsqG9uJGh9BVrqs54YDNMjZlIvWrrT8h/aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mortvyyded\\source\\repos\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
+  "projectFilePath": "C:\\Users\\mortvyyded\\Documents\\mortvyyded\\программирование\\GitHub\\practice\\YAzyki programmirovaniya\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mortvyyded\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mortvyyded\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

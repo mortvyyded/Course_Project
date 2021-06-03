@@ -17,3 +17,22 @@ C:\Users\mortvyyded\source\repos\SharpGL_My_First_Model\SharpGL_My_First_Model\o
 C:\Users\mortvyyded\source\repos\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.dll
 C:\Users\mortvyyded\source\repos\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.pdb
 C:\Users\mortvyyded\source\repos\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.genruntimeconfig.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.dll
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.pdb
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.exe
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.deps.json
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.runtimeconfig.json
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.runtimeconfig.dev.json
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.dll
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL_My_First_Model.pdb
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL.dll
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL.SceneGraph.dll
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\bin\Debug\netcoreapp3.1\SharpGL.WinForms.dll
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.csprojAssemblyReference.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.Form1.resources
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.csproj.GenerateResource.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.AssemblyInfoInputs.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.AssemblyInfo.cs
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.csproj.CoreCompileInputs.cache
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.csproj.CopyComplete
+C:\Users\mortvyyded\Documents\mortvyyded\программирование\GitHub\practice\YAzyki programmirovaniya\SharpGL_My_First_Model\SharpGL_My_First_Model\obj\Debug\netcoreapp3.1\SharpGL_My_First_Model.genruntimeconfig.cache

@@ -389,11 +389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mortvyyded\\source\\repos\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
+      "projectUniqueName": "C:\\Users\\mortvyyded\\Documents\\mortvyyded\\программирование\\GitHub\\practice\\YAzyki programmirovaniya\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
       "projectName": "SharpGL_My_First_Model",
-      "projectPath": "C:\\Users\\mortvyyded\\source\\repos\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
+      "projectPath": "C:\\Users\\mortvyyded\\Documents\\mortvyyded\\программирование\\GitHub\\practice\\YAzyki programmirovaniya\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\SharpGL_My_First_Model.csproj",
       "packagesPath": "C:\\Users\\mortvyyded\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mortvyyded\\source\\repos\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\obj\\",
+      "outputPath": "C:\\Users\\mortvyyded\\Documents\\mortvyyded\\программирование\\GitHub\\practice\\YAzyki programmirovaniya\\SharpGL_My_First_Model\\SharpGL_My_First_Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mortvyyded\\AppData\\Roaming\\NuGet\\NuGet.Config",

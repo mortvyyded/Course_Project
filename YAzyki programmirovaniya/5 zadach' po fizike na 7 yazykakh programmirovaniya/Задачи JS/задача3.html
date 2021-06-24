@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Задача №3</title>
+</head>
+<body>
+    <div class="zagalovok">
+    <h2>Какое расстояние пингвин проплывёт под водой с максимальной скоростью 30 км/ч за 5с?</h2>
+    <div class="container">
+    <h3>S</h3><output id="out"></output> 
+
+ <div class="One">  
+        <div>
+            <h3>v</h3> <input id="v" >
+        </div> 
+
+        <div>
+            <h3>t</h3> <input id="t">
+        </div>
+
+    </div> 
+    <button onclick="click()">Рассчитать</button>
+    <img src="zadacha3.png">
+    </div>
+    <script>
+        document.querySelector("button").onclick = function(){
+         let v = document.getElementById( "v" ).value;
+         let t = document.getElementById ( "t" ).value;
+           
+         let res = v * t;
+        document.getElementById("out").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>

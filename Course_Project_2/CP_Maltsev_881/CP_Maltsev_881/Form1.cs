@@ -43,7 +43,12 @@ namespace CP_Maltsev_881
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-                MessageBox.Show("Yes");
+            {
+                Form form2 = new Form2();
+                form2.Show();
+                Form form4 = new Form4();
+                form4.Show();
+            }
             else
                 MessageBox.Show("Неправильный логин или пароль!");
         }

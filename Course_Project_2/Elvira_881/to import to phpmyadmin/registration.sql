@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 09 2022 г., 23:35
+-- Время создания: Мар 12 2022 г., 19:58
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.1.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `operator`
+-- База данных: `registration`
 --
 
 -- --------------------------------------------------------
@@ -30,17 +30,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `info` (
   `id` int UNSIGNED NOT NULL,
   `ФИО` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `Программа` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `Телефон` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `Адрес подразделения` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `Номер телефона` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Услуга` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `Дата для записи` datetime NOT NULL,
+  `Подтверждение` int NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Дамп данных таблицы `info`
 --
 
-INSERT INTO `info` (`id`, `ФИО`, `Программа`, `Телефон`, `Адрес подразделения`) VALUES
-(9, '123', '123', '123', '123');
+INSERT INTO `info` (`id`, `ФИО`, `Номер телефона`, `Услуга`, `Дата для записи`, `Подтверждение`) VALUES
+(1, 'Мальцев Дмитрий', '+790000000', 'починка вайфая', '2022-03-13 22:00:00', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -60,7 +61,7 @@ ALTER TABLE `info`
 -- AUTO_INCREMENT для таблицы `info`
 --
 ALTER TABLE `info`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

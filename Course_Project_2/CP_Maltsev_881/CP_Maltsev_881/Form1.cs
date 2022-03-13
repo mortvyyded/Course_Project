@@ -46,8 +46,6 @@ namespace CP_Maltsev_881
             {
                 Form form2 = new Form2();
                 form2.Show();
-                Form form4 = new Form4();
-                form4.Show();
             }
             else
                 MessageBox.Show("Неправильный логин или пароль!");

@@ -34,13 +34,14 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Add(new string[5]);
+                data.Add(new string[6]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
                 data[data.Count - 1][3] = reader[3].ToString();
                 data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[5].ToString();
             }
 
             reader.Close();
@@ -59,14 +60,18 @@ namespace CP_Maltsev_881
         private void button2_Click(object sender, EventArgs e)
         {
             Form form3 = new Form3();
-            form3.ShowDialog();
+            form3.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int ind = dataGridView1.SelectedCells[0].RowIndex;
+            String s = dataGridView1[0, ind].Value.ToString();
+
             DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand ("DELETE FROM `info` ORDER BY `id`", database.getConnection());
+            MySqlCommand command = new MySqlCommand ("DELETE FROM `info` WHERE `id` =" + s, database.getConnection());
 
             database.openConnection();
 
@@ -76,24 +81,28 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Remove(new string[5]);
+                data.Remove(new string[6]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
                 data[data.Count - 1][3] = reader[3].ToString();
                 data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[5].ToString();
             }
 
             reader.Close();
 
             database.closeConnection();
+
+            dataGridView1.Rows.RemoveAt(ind);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            dataGridView1.Refresh();
-            this.Refresh();
+            Form form4 = new Form4();
+            form4.Show();
+            this.Hide();
         }
     }
 }

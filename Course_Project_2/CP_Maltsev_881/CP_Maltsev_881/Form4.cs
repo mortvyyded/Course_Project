@@ -57,20 +57,25 @@ namespace CP_Maltsev_881
         private void button2_Click(object sender, EventArgs e)
         {
             Form form5 = new Form5();
-            form5.ShowDialog();
+            form5.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form form6 = new Form6();
-            form6.ShowDialog();
+            form6.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            int ind = dataGridView1.SelectedCells[0].RowIndex;
+            String s = dataGridView1[0, ind].Value.ToString();
+
             DataBase2 database = new DataBase2();
 
-            MySqlCommand command = new MySqlCommand("DELETE FROM `progs1` ORDER BY `id`", database.getConnection());
+            MySqlCommand command = new MySqlCommand("DELETE FROM `progs1` WHERE `id` =" + s, database.getConnection());
 
             database.openConnection();
 
@@ -90,6 +95,15 @@ namespace CP_Maltsev_881
             reader.Close();
 
             database.closeConnection();
+
+            dataGridView1.Rows.RemoveAt(ind);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
+            this.Close();
         }
     }
 }

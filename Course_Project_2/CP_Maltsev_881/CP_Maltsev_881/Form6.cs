@@ -36,5 +36,12 @@ namespace CP_Maltsev_881
 
             database.closeConnection();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form4 = new Form4();
+            form4.Show();
+            this.Close();
+        }
     }
 }

@@ -27,9 +27,10 @@ namespace CP_Maltsev_881
         {
             DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO `info` (`ФИО`, `Программа`, `Телефон`, `Адрес подразделения`) VALUES (@name, @prog, @number, @address)", database.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `info` (`ФИО`, `Программа`, `Дата принятия заказа`, `Телефон`, `Адрес подразделения`) VALUES (@name, @prog, @date, @number, @address)", database.getConnection());
 
             command.Parameters.Add("@name", MySqlDbType.VarChar).Value = textBox1.Text;
+            command.Parameters.Add("@date", MySqlDbType.Date).Value = dateTimePicker1.Value;
             command.Parameters.Add("@prog", MySqlDbType.VarChar).Value = comboBox1.Text;
             command.Parameters.Add("@number", MySqlDbType.VarChar).Value = textBox2.Text;
             command.Parameters.Add("@address", MySqlDbType.VarChar).Value = textBox3.Text;
@@ -42,6 +43,13 @@ namespace CP_Maltsev_881
                 MessageBox.Show("Ошибка!");
 
             database.closeConnection();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
+            this.Close();
         }
     }
 }

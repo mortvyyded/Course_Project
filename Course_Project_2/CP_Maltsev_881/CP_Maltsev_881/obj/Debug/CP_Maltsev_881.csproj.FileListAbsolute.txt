@@ -51,3 +51,5 @@ C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\к
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.csproj.CopyComplete
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.exe
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.pdb
+C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormCompletedOrders.resources
+C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormWaitingOrders.resources

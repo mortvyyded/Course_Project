@@ -52,3 +52,4 @@ C:\Users\radmi\Desktop\Elvira_881\Elvira_881\obj\Debug\Elvira_881.csproj.CoreCom
 C:\Users\radmi\Desktop\Elvira_881\Elvira_881\obj\Debug\Elvira_881.csproj.CopyComplete
 C:\Users\radmi\Desktop\Elvira_881\Elvira_881\obj\Debug\Elvira_881.exe
 C:\Users\radmi\Desktop\Elvira_881\Elvira_881\obj\Debug\Elvira_881.pdb
+C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\программирование\visual_studio\Elvira_881\Elvira_881\obj\Debug\Elvira_881.Form5.resources

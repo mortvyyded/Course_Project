@@ -14,9 +14,11 @@ using System.Reflection;
 
 namespace CP_Maltsev_881
 {
-    public partial class Form5 : Form
+    public partial class FormWaitingOrders : Form
     {
-        public Form5()
+        public string s;
+
+        public FormWaitingOrders()
         {
             InitializeComponent();
 
@@ -25,9 +27,9 @@ namespace CP_Maltsev_881
 
         private void LoadData()
         {
-            DataBase2 database = new DataBase2();
+            DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `orderprogs` ORDER BY `id`", database.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `info` ORDER BY `id`", database.getConnection());
 
             database.openConnection();
 
@@ -37,11 +39,14 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Add(new string[3]);
+                data.Add(new string[6]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
+                data[data.Count - 1][3] = reader[3].ToString();
+                data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[5].ToString();
             }
 
             reader.Close();
@@ -132,7 +137,7 @@ namespace CP_Maltsev_881
                 {
                     Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
                     headerRange.Fields.Add(headerRange, Word.WdFieldType.wdFieldPage);
-                    headerRange.Text = "Список ПО на закупку";
+                    headerRange.Text = "Список заявок на обработке";
                     headerRange.Font.Size = 16;
                     headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
                 }
@@ -148,47 +153,19 @@ namespace CP_Maltsev_881
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FormWaitingOrders_Load(object sender, EventArgs e)
         {
-            DataBase2 database = new DataBase2();
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO `orderprogs` (`Программа`, `Количество`) VALUES (@prog, @count)", database.getConnection());
-
-            command.Parameters.Add("@prog", MySqlDbType.VarChar).Value = comboBox1.Text;
-            command.Parameters.Add("@count", MySqlDbType.VarChar).Value = textBox1.Text;
-
-            database.openConnection();
-
-            if (command.ExecuteNonQuery() == 1)
-                MessageBox.Show("Добавлено");
-            else
-                MessageBox.Show("Ошибка!");
-
-            database.closeConnection();
-
-            dataGridView1.Rows.Add();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form form4 = new Form4();
-            form4.Show();
-            this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
             int ind = dataGridView1.SelectedCells[0].RowIndex;
-            String s = dataGridView1[0, ind].Value.ToString();
+            s = dataGridView1[0, ind].Value.ToString();
 
-            DataBase2 database = new DataBase2();
+            DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("DELETE FROM `orderprogs` WHERE `id` =" + s, database.getConnection());
+            MySqlCommand command = new MySqlCommand("UPDATE `info` SET `Оформление`= 2 WHERE `id` =" + s, database.getConnection());
 
             database.openConnection();
 
@@ -198,11 +175,14 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Remove(new string[3]);
+                data.Add(new string[6]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
                 data[data.Count - 1][2] = reader[2].ToString();
+                data[data.Count - 1][3] = reader[3].ToString();
+                data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[5].ToString();
             }
 
             reader.Close();
@@ -212,12 +192,48 @@ namespace CP_Maltsev_881
             dataGridView1.Rows.RemoveAt(ind);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            int ind = dataGridView1.SelectedCells[0].RowIndex;
+            String s = dataGridView1[0, ind].Value.ToString();
 
+            DataBase1 database = new DataBase1();
+
+            MySqlCommand command = new MySqlCommand("DELETE FROM `info` WHERE `id` =" + s, database.getConnection());
+
+            database.openConnection();
+
+            MySqlDataReader reader = command.ExecuteReader();
+
+            List<string[]> data = new List<string[]>();
+
+            while (reader.Read())
+            {
+                data.Remove(new string[6]);
+
+                data[data.Count - 1][0] = reader[0].ToString();
+                data[data.Count - 1][1] = reader[1].ToString();
+                data[data.Count - 1][2] = reader[2].ToString();
+                data[data.Count - 1][3] = reader[3].ToString();
+                data[data.Count - 1][4] = reader[4].ToString();
+                data[data.Count - 1][5] = reader[5].ToString();
+            }
+
+            reader.Close();
+
+            database.closeConnection();
+
+            dataGridView1.Rows.RemoveAt(ind);
         }
 
-        private void button7_Click_1(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
 

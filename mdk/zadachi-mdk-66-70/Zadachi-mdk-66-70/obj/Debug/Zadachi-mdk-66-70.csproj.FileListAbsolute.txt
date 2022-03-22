@@ -1,6 +1,0 @@
-c:\users\user\documents\visual studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\bin\Debug\Zadachi-mdk-66-70.exe.config
-C:\Users\user\Documents\Visual Studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\bin\Debug\Zadachi-mdk-66-70.exe
-C:\Users\user\Documents\Visual Studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\bin\Debug\Zadachi-mdk-66-70.pdb
-C:\Users\user\Documents\Visual Studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\obj\Debug\Zadachi-mdk-66-70.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\Visual Studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\obj\Debug\Zadachi-mdk-66-70.exe
-C:\Users\user\Documents\Visual Studio 2012\Projects\Zadachi-mdk-66-70\Zadachi-mdk-66-70\obj\Debug\Zadachi-mdk-66-70.pdb

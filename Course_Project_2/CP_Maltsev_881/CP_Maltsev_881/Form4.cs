@@ -25,9 +25,9 @@ namespace CP_Maltsev_881
 
         private void LoadData()
         {
-            DataBase2 database = new DataBase2();
+            DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `progs1` ORDER BY `id`", database.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `progs` ORDER BY `id`", database.getConnection());
 
             database.openConnection();
 
@@ -61,20 +61,18 @@ namespace CP_Maltsev_881
                 int ColumnCount = DGV.Columns.Count;
                 Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
 
-                //add rows
                 int r = 0;
                 for (int c = 0; c <= ColumnCount - 1; c++)
                 {
                     for (r = 0; r <= RowCount - 1; r++)
                     {
                         DataArray[r, c] = DGV.Rows[r].Cells[c].Value;
-                    } //end row loop
-                } //end column loop
+                    }
+                }
 
                 Word.Document oDoc = new Word.Document();
                 oDoc.Application.Visible = true;
 
-                //page orintation
                 oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
 
 
@@ -89,7 +87,6 @@ namespace CP_Maltsev_881
                     }
                 }
 
-                //table format
                 oRange.Text = oTemp;
                 object oMissing = Missing.Value;
                 object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
@@ -112,22 +109,18 @@ namespace CP_Maltsev_881
                 oDoc.Application.Selection.InsertRowsAbove(1);
                 oDoc.Application.Selection.Tables[1].Rows[1].Select();
 
-                //header row style
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 1;
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
 
-                //add header row manually
                 for (int c = 0; c <= ColumnCount - 1; c++)
                 {
                     oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = DGV.Columns[c].HeaderText;
                 }
 
-                //table style 
                 oDoc.Application.Selection.Tables[1].Rows[1].Select();
                 oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
 
-                //header text
                 foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
                 {
                     Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
@@ -137,14 +130,11 @@ namespace CP_Maltsev_881
                     headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
                 }
 
-                //save the file
-
                 oDoc.SaveAs(filename, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing);
 
-                //NASSIM LOUCHANI
             }
         }
 
@@ -153,17 +143,10 @@ namespace CP_Maltsev_881
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form form5 = new Form5();
             form5.Show();
-            this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form form6 = new Form6();
-            form6.Show();
             this.Hide();
         }
 
@@ -172,9 +155,9 @@ namespace CP_Maltsev_881
             int ind = dataGridView1.SelectedCells[0].RowIndex;
             String s = dataGridView1[0, ind].Value.ToString();
 
-            DataBase2 database = new DataBase2();
+            DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("DELETE FROM `progs1` WHERE `id` =" + s, database.getConnection());
+            MySqlCommand command = new MySqlCommand("DELETE FROM `progs` WHERE `id` =" + s, database.getConnection());
 
             database.openConnection();
 

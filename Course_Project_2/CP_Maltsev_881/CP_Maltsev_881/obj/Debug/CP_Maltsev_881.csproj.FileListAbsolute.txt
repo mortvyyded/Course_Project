@@ -44,7 +44,6 @@ C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\к
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.Form3.resources
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.Form4.resources
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.Form5.resources
-C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.Form6.resources
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.Properties.Resources.resources
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.csproj.GenerateResource.cache
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.csproj.CoreCompileInputs.cache
@@ -53,3 +52,5 @@ C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\к
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.pdb
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormCompletedOrders.resources
 C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormWaitingOrders.resources
+C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormClients.resources
+C:\Users\mortvyyded\Favorites\Ссылки\разное\mortvyyded\учёба\курсовая2\программа\CP_Maltsev_881\CP_Maltsev_881\obj\Debug\CP_Maltsev_881.FormStaff.resources

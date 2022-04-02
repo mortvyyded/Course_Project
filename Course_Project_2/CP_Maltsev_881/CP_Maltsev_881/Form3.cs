@@ -27,13 +27,14 @@ namespace CP_Maltsev_881
         {
             DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO `info` (`ФИО`, `Программа`, `Дата принятия заказа`, `Телефон`, `Адрес подразделения`) VALUES (@name, @prog, @date, @number, @address)", database.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `info` (`Клиент`, `ФИО сотрудника`, `Программа`, `Дата принятия заказа`, `Телефон`, `Адрес подразделения`, `Оформление`) VALUES (@client, @namestaff, @prog, @date, @number, @address, 0)", database.getConnection());
 
-            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = textBox1.Text;
-            command.Parameters.Add("@date", MySqlDbType.Date).Value = dateTimePicker1.Value;
+            command.Parameters.Add("@client", MySqlDbType.VarChar).Value = textBox1.Text;
+            command.Parameters.Add("@namestaff", MySqlDbType.VarChar).Value = textBox2.Text;
             command.Parameters.Add("@prog", MySqlDbType.VarChar).Value = comboBox1.Text;
-            command.Parameters.Add("@number", MySqlDbType.VarChar).Value = textBox2.Text;
-            command.Parameters.Add("@address", MySqlDbType.VarChar).Value = textBox3.Text;
+            command.Parameters.Add("@date", MySqlDbType.Date).Value = dateTimePicker1.Value;
+            command.Parameters.Add("@number", MySqlDbType.VarChar).Value = textBox3.Text;
+            command.Parameters.Add("@address", MySqlDbType.VarChar).Value = textBox4.Text;
 
             database.openConnection();
 

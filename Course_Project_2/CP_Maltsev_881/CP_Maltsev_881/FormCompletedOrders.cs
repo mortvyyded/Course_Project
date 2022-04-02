@@ -27,7 +27,7 @@ namespace CP_Maltsev_881
         {
             DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `info` WHERE `Оформление` = 1", database.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `info` WHERE `Оформление` = 2", database.getConnection());
 
             database.openConnection();
 
@@ -37,7 +37,7 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Add(new string[6]);
+                data.Add(new string[8]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
@@ -45,6 +45,8 @@ namespace CP_Maltsev_881
                 data[data.Count - 1][3] = reader[3].ToString();
                 data[data.Count - 1][4] = reader[4].ToString();
                 data[data.Count - 1][5] = reader[5].ToString();
+                data[data.Count - 1][6] = reader[6].ToString();
+                data[data.Count - 1][7] = reader[7].ToString();
             }
 
             reader.Close();
@@ -64,20 +66,18 @@ namespace CP_Maltsev_881
                 int ColumnCount = DGV.Columns.Count;
                 Object[,] DataArray = new object[RowCount + 1, ColumnCount + 1];
 
-                //add rows
                 int r = 0;
                 for (int c = 0; c <= ColumnCount - 1; c++)
                 {
                     for (r = 0; r <= RowCount - 1; r++)
                     {
                         DataArray[r, c] = DGV.Rows[r].Cells[c].Value;
-                    } //end row loop
-                } //end column loop
+                    }
+                }
 
                 Word.Document oDoc = new Word.Document();
                 oDoc.Application.Visible = true;
 
-                //page orintation
                 oDoc.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
 
 
@@ -92,7 +92,6 @@ namespace CP_Maltsev_881
                     }
                 }
 
-                //table format
                 oRange.Text = oTemp;
                 object oMissing = Missing.Value;
                 object Separator = Word.WdTableFieldSeparator.wdSeparateByTabs;
@@ -115,22 +114,18 @@ namespace CP_Maltsev_881
                 oDoc.Application.Selection.InsertRowsAbove(1);
                 oDoc.Application.Selection.Tables[1].Rows[1].Select();
 
-                //header row style
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Bold = 1;
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Name = "Tahoma";
                 oDoc.Application.Selection.Tables[1].Rows[1].Range.Font.Size = 14;
 
-                //add header row manually
                 for (int c = 0; c <= ColumnCount - 1; c++)
                 {
                     oDoc.Application.Selection.Tables[1].Cell(1, c + 1).Range.Text = DGV.Columns[c].HeaderText;
                 }
 
-                //table style 
                 oDoc.Application.Selection.Tables[1].Rows[1].Select();
                 oDoc.Application.Selection.Cells.VerticalAlignment = Word.WdCellVerticalAlignment.wdCellAlignVerticalCenter;
 
-                //header text
                 foreach (Word.Section section in oDoc.Application.ActiveDocument.Sections)
                 {
                     Word.Range headerRange = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary].Range;
@@ -140,14 +135,11 @@ namespace CP_Maltsev_881
                     headerRange.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
                 }
 
-                //save the file
-
                 oDoc.SaveAs(filename, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing, ref oMissing, ref oMissing, ref oMissing,
     ref oMissing, ref oMissing);
 
-                //NASSIM LOUCHANI
             }
         }
 
@@ -173,7 +165,7 @@ namespace CP_Maltsev_881
 
             while (reader.Read())
             {
-                data.Remove(new string[6]);
+                data.Remove(new string[8]);
 
                 data[data.Count - 1][0] = reader[0].ToString();
                 data[data.Count - 1][1] = reader[1].ToString();
@@ -181,6 +173,8 @@ namespace CP_Maltsev_881
                 data[data.Count - 1][3] = reader[3].ToString();
                 data[data.Count - 1][4] = reader[4].ToString();
                 data[data.Count - 1][5] = reader[5].ToString();
+                data[data.Count - 1][6] = reader[6].ToString();
+                data[data.Count - 1][7] = reader[7].ToString();
             }
 
             reader.Close();

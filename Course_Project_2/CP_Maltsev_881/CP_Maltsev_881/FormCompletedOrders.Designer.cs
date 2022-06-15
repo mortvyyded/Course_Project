@@ -41,6 +41,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -121,11 +122,12 @@
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column7});
+            this.Column7,
+            this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(12, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1240, 569);
-            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.TabIndex = 15;
             // 
             // Column1
             // 
@@ -134,12 +136,12 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Клиент";
+            this.Column2.HeaderText = "ФИО клиента";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "ФИО сотрудника";
+            this.Column3.HeaderText = "Дата принятия заказа";
             this.Column3.Name = "Column3";
             // 
             // Column4
@@ -149,18 +151,23 @@
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Дата принятия заказа";
+            this.Column5.HeaderText = "Телефон";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Телефон";
+            this.Column6.HeaderText = "Адрес подразделения";
             this.Column6.Name = "Column6";
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "Адрес подразделения";
+            this.Column7.HeaderText = "Адрес электронной почты";
             this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Сообщение";
+            this.Column8.Name = "Column8";
             // 
             // FormCompletedOrders
             // 
@@ -192,5 +199,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }

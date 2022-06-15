@@ -29,7 +29,7 @@ namespace CP_Maltsev_881
         {
             DataBase1 database = new DataBase1();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `info` ORDER BY `id`", database.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `info` WHERE `Оформление` = 0", database.getConnection());
 
             database.openConnection();
 

@@ -9,7 +9,7 @@ namespace CP_Maltsev_881
 {
     internal class DataBase
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password='';database=cpdatabase");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=vkrdatabase");
 
         public void openConnection()
         {

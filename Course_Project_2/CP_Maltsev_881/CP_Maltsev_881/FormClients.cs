@@ -57,7 +57,9 @@ namespace CP_Maltsev_881
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form formclientadd = new FormClientAdd();
+            formclientadd.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
